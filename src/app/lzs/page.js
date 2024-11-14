@@ -11,7 +11,7 @@ export default function Page() {
                   className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0 object-contain"
                 />
                 <h1 className="text-xl font-bold">LZS</h1>
-                <p className="text-gray-700">Software Developer</p>
+                <p className="text-gray-700">idk</p>
               </div>
               <hr className="my-6 border-t border-gray-300" />
               <div className="flex flex-col">
