@@ -16,7 +16,7 @@ export default function Page() {
               <hr className="my-6 border-t border-gray-300" />
               <div className="flex flex-col">
                 <span className="text-gray-700 uppercase font-bold tracking-wider mb-2">
-                  Nothing
+                  SKILLS
                 </span>
                 <ul>
                   <li className="mb-2">Nothing</li>
@@ -31,11 +31,11 @@ export default function Page() {
           <div className="col-span-4 sm:col-span-9">
             <div className="bg-white shadow rounded-lg p-6">
               <h2 className="text-xl font-bold mb-4">About Me</h2>
-              <p className="text-gray-700"> </p>
+              <p className="text-gray-700">thinking</p>
 
               <h2 className="text-xl font-bold mt-6 mb-4">經驗</h2>
               <div className="mb-6">
-                <p className="text-gray-700"> </p>
+                <p className="text-gray-700">🤔</p>
               </div>
             </div>
           </div>
