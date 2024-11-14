@@ -10,8 +10,8 @@ export default function Page() {
                   src="https://i.imgur.com/wEieJKG.jpeg"
                   className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0 object-contain"
                 />
-                <h1 className="text-xl font-bold">LZS</h1>
-                <p className="text-gray-700">idk</p>
+                <h1 className="text-xl font-bold">Zhi-Sheng Li</h1>
+                <p className="text-gray-700">Student</p>
               </div>
               <hr className="my-6 border-t border-gray-300" />
               <div className="flex flex-col">
@@ -19,11 +19,10 @@ export default function Page() {
                   SKILLS
                 </span>
                 <ul>
-                  <li className="mb-2">Nothing</li>
-                  <li className="mb-2">Nothing</li>
-                  <li className="mb-2">Nothing</li>
-                  <li className="mb-2">Nothing</li>
-                  <li className="mb-2">Nothing</li>
+                  <li className="mb-2">js/ts</li>
+                  <li className="mb-2">python</li>
+                  <li className="mb-2">c/c++/c#/java</li>
+                  <li className="mb-2">html/css</li>
                 </ul>
               </div>
             </div>
@@ -35,7 +34,7 @@ export default function Page() {
 
               <h2 className="text-xl font-bold mt-6 mb-4">經驗</h2>
               <div className="mb-6">
-                <p className="text-gray-700">🤔</p>
+                <p className="text-gray-700">0 experience🤔</p>
               </div>
             </div>
           </div>
