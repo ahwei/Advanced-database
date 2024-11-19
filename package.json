@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "init-orm": "npm run setup-schema && npx prisma generate && npx prisma migrate dev && npm run prisma:seed",
-    "setup-schema": "mkdir -p prisma && cp prisma/schema.local.prisma prisma/schema.prisma",
+    "setup-schema": "node scripts/copy-schema.js schema.local.prisma",
     "dev": "npm run setup-schema && prisma migrate dev && next dev",
-    "build": "cp prisma/schema.prod.prisma prisma/schema.prisma && next build",
-    "start": "cp prisma/schema.prod.prisma prisma/schema.prisma && next start",
+    "build": "node scripts/copy-schema.js schema.prod.prisma && next build",
+    "start": "node scripts/copy-schema.js schema.prod.prisma && next start",
     "lint": "next lint",
     "prisma:generate": "npm run setup-schema && prisma generate",
     "prisma:migrate": "npm run setup-schema && prisma migrate dev",
