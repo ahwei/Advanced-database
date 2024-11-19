@@ -2,9 +2,15 @@ const fs = require('fs');
 const path = require('path');
 
 const env = process.env.NODE_ENV;
+const vercelEnv = process.env.VERCEL_ENV;
+
 let schemaFile = 'schema.local.prisma';
 
-if (env === 'production') {
+if (
+  env === 'production' ||
+  vercelEnv === 'preview' ||
+  vercelEnv === 'development'
+) {
   schemaFile = 'schema.prod.prisma';
 }
 
