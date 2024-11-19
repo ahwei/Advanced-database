@@ -1,26 +1,17 @@
+import prisma from '@/lib/prisma';
 import { headers } from 'next/headers';
 import SearchForm from './SearchForm';
 
 async function getUsers(name) {
-  const headersList = headers();
-  const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https';
-  const host = headersList.get('host');
-
-  const response = await fetch(
-    `${protocol}://${host}/api/get-user?name=${encodeURIComponent(name)}`,
-    {
-      cache: 'no-store',
-      headers: {
-        Accept: 'application/json',
+  const users = await prisma.user.findMany({
+    where: {
+      name: {
+        contains: name || '',
       },
     },
-  );
+  });
 
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-
-  return response.json();
+  return users;
 }
 
 export default async function UserSSRPage({ searchParams }) {
