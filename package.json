@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "init-orm": "npm run setup-schema && npx prisma generate && npx prisma migrate dev && npm run prisma:seed",
-    "setup-schema": "node scripts/copy-schema.js schema.local.prisma",
+    "setup-schema": "node scripts/copy-schema.js",
     "dev": "npm run setup-schema && prisma migrate dev && next dev",
     "build": "node scripts/copy-schema.js schema.prod.prisma && next build",
     "start": "node scripts/copy-schema.js schema.prod.prisma && next start",

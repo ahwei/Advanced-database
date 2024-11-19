@@ -1,15 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 
-const source = process.argv[2];
+const env = process.env.NODE_ENV;
+let schemaFile = 'schema.local.prisma';
 
-try {
-  fs.copyFileSync(
-    path.join(__dirname, '..', 'prisma', source),
-    path.join(__dirname, '..', 'prisma', 'schema.prisma'),
-  );
-  console.log(`Successfully copied schema from ${source} to schema.prisma`);
-} catch (err) {
-  console.error('Error copying schema file:', err);
-  process.exit(1);
+if (env === 'production') {
+  schemaFile = 'schema.prod.prisma';
 }
+
+const source = path.join(__dirname, '..', 'prisma', schemaFile);
+const destination = path.join(__dirname, '..', 'prisma', 'schema.prisma');
+
+fs.copyFileSync(source, destination);
+console.log(`Copied ${schemaFile} to schema.prisma`);
