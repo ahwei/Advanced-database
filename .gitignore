@@ -39,3 +39,4 @@ prisma/dev.db
 prisma/dev.db-journal
 .env.production
 prisma/schema.prisma
+prisma/migrations/migration_lock.toml
