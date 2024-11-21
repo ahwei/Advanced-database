@@ -30,7 +30,7 @@ export default function Page() {
                 </span>
                 <ul>
                   <li className="mb-2 text-gray-200">虛擬偶像兼插畫家</li>
-                  <li className="mb-2 text-gray-200">「古神的使者」設定</li>
+                  <li className="mb-2 text-gray-200">「古神使者」設定</li>
                   <li className="mb-2 text-gray-200">愛畫畫與遊戲</li>
                   <li className="mb-2 text-gray-200">粉絲群名稱：Takodachi</li>
                   <li className="mb-2 text-gray-200">溫柔又幽默的性格</li>
