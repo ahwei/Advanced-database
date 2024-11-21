@@ -11,65 +11,64 @@ export default function Page() {
                   className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0 object-contain"
                 />
                 <h1 className="text-xl font-bold text-white">Elena</h1>
-                <p className="text-gray-400">軟體開發工程師</p>
+                <p className="text-gray-400">Software Developer</p>
               </div>
               <hr className="my-6 border-t border-gray-600" />
               <div className="flex flex-col">
                 <span className="text-gray-400 uppercase font-bold tracking-wider mb-2">
-                  專業技能
+                  Skills
                 </span>
                 <ul>
                   <li className="mb-2 text-gray-300">JavaScript</li>
                   <li className="mb-2 text-gray-300">React</li>
                   <li className="mb-2 text-gray-300">Node.js</li>
                   <li className="mb-2 text-gray-300">HTML/CSS</li>
-                  <li className="mb-2 text-gray-300">Tailwind CSS</li>
+                  <li className="mb-2 text-gray-300">Tailwind Css</li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="col-span-4 sm:col-span-9">
             <div className="bg-gray-800 shadow rounded-lg p-6">
-              <h2 className="text-xl font-bold text-white mb-4">關於我</h2>
+              <h2 className="text-xl font-bold text-white mb-4">About Me</h2>
               <p className="text-gray-400">
-                嗨！我是 Elena，來自美麗的澎湖小島。目前熱衷於軟體開發，樂於接受新挑戰。
+                嗨！我是 Elena，來自澎湖的一個小島
               </p>
 
-              <h2 className="text-xl font-bold text-white mt-6 mb-4">工作經驗</h2>
+              <h2 className="text-xl font-bold text-white mt-6 mb-4">經驗</h2>
               <div className="mb-6">
                 <div className="flex justify-between flex-wrap gap-2 w-full">
-                  <span className="text-gray-400 font-bold">CodeGreen</span>
+                  <span className="text-gray-400 font-bold">。</span>
                   <p>
+                    <span className="text-gray-400 mr-2">於 CodeGreen</span>
                     <span className="text-gray-400">2020 - 2022</span>
                   </p>
                 </div>
                 <p className="mt-2 text-gray-300">
-                  曾參與多個前端與全端專案的開發，專注於提升用戶體驗與系統效能。
+                  目前擔任高科大懶惰蟲，興趣睡覺。
                 </p>
               </div>
 
               <div className="mb-6">
                 <div className="flex justify-between flex-wrap gap-2 w-full">
-                  <span className="text-gray-400 font-bold">Hashgreen Labs</span>
+                  <span className="text-gray-400 font-bold">。。。</span>
                   <p>
+                    <span className="text-gray-400 mr-2">於 Hashgreen Labs</span>
                     <span className="text-gray-400">2018 - 2020</span>
                   </p>
                 </div>
-                <p className="mt-2 text-gray-300">
-                  主要負責後端系統設計與資料庫優化，並與團隊合作完成多項企業級專案。
-                </p>
+                <p className="mt-2 text-gray-300">口頭禪好好笑。</p>
               </div>
 
               <div className="mb-6">
                 <div className="flex justify-between flex-wrap gap-2 w-full">
-                  <span className="text-gray-400 font-bold">XYZ Tech</span>
+                  <span className="text-gray-400 font-bold">。。。</span>
                   <p>
+                    <span className="text-gray-400 mr-2">於 XYZ Tech</span>
                     <span className="text-gray-400">2015 - 2018</span>
                   </p>
                 </div>
-                <p className="mt-2 text-gray-300">
-                  初期作為前端工程師，累積了豐富的專案開發經驗，逐漸涉足全端技術。
-                </p>
+                <p className="mt-2 text-gray-300">介紹完畢。</p>
               </div>
             </div>
           </div>
