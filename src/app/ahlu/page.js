@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 
 export default function Page() {
@@ -15,15 +16,29 @@ export default function Page() {
       mode: (isDark) => `切換至${isDark ? "亮色模式" : "暗色模式"}`,
       lang: "切換語言",
       contactDetails: "聯繫我：example@example.com",
+      aboutContent: `里安納度·狄卡比奧是一位全球知名的演員與環保倡導者。他以在電影中的出色表演和深入的角色塑造聞名，參與了包括《鐵達尼號》、《神鬼獵人》和《華爾街之狼》等經典作品。他同時也是一名致力於推動全球環境保護的行動家，創立了狄卡比奧基金會，資助了多個環保計畫，專注於氣候變遷、生物多樣性和海洋保育等領域。他的職業生涯充滿了榮耀與成就，而他的公益行動更讓他成為一位深受尊敬的公眾人物。`,
+      experienceHighlights: [
+        "榮獲奧斯卡最佳男主角，憑藉《神鬼獵人》展現了極高的表演技藝。",
+        "領導多個環保專案，創立基金會以支持氣候行動。",
+        "與多位著名導演合作，包括馬丁·史柯西斯與克里斯多福·諾蘭。",
+        "參與了數十部備受好評的電影作品，全球票房累計超過 70 億美元。",
+      ],
     },
     en: {
       about: "About Me",
       achievements: "Achievements",
       contact: "Contact",
-      experience: "Experience",
+      experience: "Professional Highlights",
       mode: (isDark) => `Switch to ${isDark ? "Light Mode" : "Dark Mode"}`,
       lang: "Switch Language",
       contactDetails: "Contact me: example@example.com",
+      aboutContent: `Leonardo DiCaprio is a globally renowned actor and environmental advocate. He is celebrated for his outstanding performances and in-depth character portrayals in classics like *Titanic*, *The Revenant*, and *The Wolf of Wall Street*. In addition to his acting accolades, he is a committed environmental activist. Through the Leonardo DiCaprio Foundation, he has funded numerous environmental projects focused on climate change, biodiversity, and ocean conservation. His career is marked by both cinematic triumphs and impactful philanthropy, making him a respected public figure worldwide.`,
+      experienceHighlights: [
+        "Won the Academy Award for Best Actor for his outstanding performance in *The Revenant*.",
+        "Led multiple environmental initiatives through his foundation to support climate action.",
+        "Collaborated with acclaimed directors such as Martin Scorsese and Christopher Nolan.",
+        "Starred in over 30 critically acclaimed films with a combined global box office revenue exceeding $7 billion.",
+      ],
     },
   };
 
@@ -125,29 +140,23 @@ export default function Page() {
               <div className="bg-white dark:bg-gray-700 shadow rounded-lg p-6">
                 <h2 className="text-xl font-bold mb-4">{content[language].about}</h2>
                 <p className="text-gray-700 dark:text-gray-300">
-                  {language === "zh"
-                    ? "里安納度是一位著名的演員與環保倡導者，致力於推動氣候行動。"
-                    : "Leonardo is a renowned actor and environmental advocate, committed to climate action."}
+                  {content[language].aboutContent}
                 </p>
+
                 <h2 className="text-xl font-bold mt-6 mb-4">
                   {content[language].experience}
                 </h2>
-                <p className="text-gray-700 dark:text-gray-300">
-                  {language === "zh"
-                    ? "代表作包括《鐵達尼號》、《全面啟動》等經典電影。"
-                    : "Famous works include Titanic, Inception, and other classics."}
-                </p>
+                <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6">
+                  {content[language].experienceHighlights.map((item, index) => (
+                    <li key={index} className="mb-2">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
         </div>
-
-        {/* 聯繫方式 */}
-        <footer className="bg-gray-200 dark:bg-gray-900 text-center py-4">
-          <p className="text-gray-700 dark:text-gray-400">
-            {content[language].contactDetails}
-          </p>
-        </footer>
       </div>
     </div>
   );
