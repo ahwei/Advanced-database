@@ -16,11 +16,11 @@ export default function Page() {
             <div className="shadow rounded-lg p-6 bg-transparent backdrop-blur-md">
               <div className="flex flex-col items-center">
                 <img
-                  src="https://i.imgur.com/bSuTQWm.jpeg" // 替換為 Ninomae Ina'nis 的圖片
+                  src="https://i.imgur.com/bSuTQWm.jpeg" // 替換為 Ninomae Ina‘nis 的圖片
                   className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0 object-contain"
-                  alt="Ninomae Ina'nis"
+                  alt="Ninomae Ina‘nis"
                 />
-                <h1 className="text-xl font-bold text-white">Ninomae Ina'nis</h1>
+                <h1 className="text-xl font-bold text-white">Ninomae Ina‘nis</h1>
                 <p className="text-gray-200">Hololive EN 成員</p>
               </div>
               <hr className="my-6 border-t border-gray-300" />
@@ -45,7 +45,7 @@ export default function Page() {
               {/* 關於我 */}
               <h2 className="text-xl font-bold mb-4 text-white">關於我</h2>
               <p className="text-gray-200">
-                大家好！我是 Ninomae Ina'nis，來自 hololive English 的
+                大家好！我是 Ninomae Ina‘nis，來自 hololive English 的
                 VTuber。我是「古神的使者」，擁有神秘的觸手之力，也是一名插畫家與遊戲愛好者。
                 我的直播充滿藝術創作、休閒遊戲以及與粉絲 Takodachi 的歡樂互動！
               </p>
