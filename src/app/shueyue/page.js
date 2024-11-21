@@ -3,7 +3,7 @@ export default function Page() {
     <div
       className="h-[100vh] scroll-my-1"
       style={{
-        backgroundImage: "url('https://i.imgur.com/Qn6jT2i.gif')", // 背景圖片 URL
+        backgroundImage: "url(https://i.imgur.com/Qn6jT2i.gif)", // 背景圖片 URL
         backgroundSize: "cover", // 背景覆蓋整個畫面
         backgroundPosition: "center", // 背景居中
         backgroundRepeat: "no-repeat", // 防止背景重複
