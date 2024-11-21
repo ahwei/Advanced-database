@@ -7,7 +7,7 @@ export default function Page() {
             <div className="bg-white shadow rounded-lg p-6">
               <div className="flex flex-col items-center">
                 <img
-                  src="https://i.imgur.com/rDfBLN1.jpeg"
+                  src="https://i.imgur.com/SdOFdX9_d.jpeg?maxwidth=520&shape=thumb&fidelity=high"
                   className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0 object-contain"
                 />
                 <h1 className="text-xl font-bold">AhWei</h1>
