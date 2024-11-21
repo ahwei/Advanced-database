@@ -19,11 +19,11 @@ export default function Page() {
                   Skills
                 </span>
                 <ul>
-                  <li className="mb-2">JavaScript</li>
-                  <li className="mb-2">React</li>
-                  <li className="mb-2">Node.js</li>
-                  <li className="mb-2">HTML/CSS</li>
-                  <li className="mb-2">Tailwind CSS</li>
+                  <li className="mb-2">NO</li>
+                  <li className="mb-2">NO</li>
+                  <li className="mb-2">NO</li>
+                  <li className="mb-2">NO</li>
+                  <li className="mb-2">NO</li>
                 </ul>
               </div>
             </div>
