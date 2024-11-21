@@ -3,21 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "init-orm": "npm run setup-schema && npx prisma generate && npx prisma migrate dev && npm run prisma:seed",
+    "setup-schema": "node scripts/copy-schema.js",
+    "dev": "npm run setup-schema && prisma migrate dev && next dev",
+    "build": "node scripts/copy-schema.js schema.prod.prisma && next build",
+    "start": "node scripts/copy-schema.js schema.prod.prisma && next start",
+    "lint": "next lint",
+    "prisma:generate": "npm run setup-schema && prisma generate",
+    "prisma:migrate": "npm run setup-schema && prisma migrate dev",
+    "prisma:studio": "npm run setup-schema && prisma studio",
+    "prisma:seed": "node prisma/seed.js",
+    "postinstall": "npm run prisma:generate"
   },
   "dependencies": {
+    "@prisma/client": "^5.22.0",
     "eslint-config-next": "15.0.0-rc.1",
     "flowbite-react": "^0.10.2",
     "next": "15.0.2-canary.9",
+    "prisma": "^5.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
+    "@types/node": "^18.19.64",
     "jest": "^29.7.0",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
