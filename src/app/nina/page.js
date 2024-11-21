@@ -7,7 +7,7 @@ export default function Page() {
             <div className="bg-white shadow rounded-lg p-6">
               <div className="flex flex-col items-center">
                 <img
-                  src="https://i.imgur.com/rDfBLN1.jpeg"
+                  src="https://i.imgur.com/lBebnlB_d.png?maxwidth=520&shape=thumb&fidelity=high"
                   className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0 object-contain"
                 />
                 <h1 className="text-xl font-bold">康家瑀 (Nina)</h1>
@@ -19,11 +19,11 @@ export default function Page() {
                   Skills
                 </span>
                 <ul>
-                  <li className="mb-2">JavaScript</li>
-                  <li className="mb-2">React</li>
-                  <li className="mb-2">Node.js</li>
-                  <li className="mb-2">HTML/CSS</li>
-                  <li className="mb-2">Tailwind CSS</li>
+                  <li className="mb-2">NO</li>
+                  <li className="mb-2">NO</li>
+                  <li className="mb-2">NO</li>
+                  <li className="mb-2">NO</li>
+                  <li className="mb-2">NO</li>
                 </ul>
               </div>
             </div>
@@ -42,8 +42,8 @@ export default function Page() {
                     大學生
                   </span>
                   <p>
-                    <span className="text-gray-700 mr-2">於 CodeGreen</span>
-                    <span className="text-gray-700">2020 - 2022</span>
+                    <span className="text-gray-700 mr-2">無</span>
+                    <span className="text-gray-700">無</span>
                   </p>
                 </div>
                 <p className="mt-2">
@@ -53,26 +53,25 @@ export default function Page() {
 
               <div className="mb-6">
                 <div className="flex justify-between flex-wrap gap-2 w-full">
-                  <span className="text-gray-700 font-bold">前端開發人員</span>
+                  <span className="text-gray-700 font-bold">無</span>
                   <p>
                     <span className="text-gray-700 mr-2">
-                      於 Hashgreen Labs
+                      無
                     </span>
-                    <span className="text-gray-700">2018 - 2020</span>
+                    <span className="text-gray-700">無</span>
                   </p>
                 </div>
                 <p className="mt-2">
-                  在 Hashgreen Labs 中參與了多個開源項目的開發，並使用
-                  Playwright 進行測試自動化，撰寫社群貢獻文件，提升了項目開發效率。
+                  無
                 </p>
               </div>
 
               <div className="mb-6">
                 <div className="flex justify-between flex-wrap gap-2 w-full">
-                  <span className="text-gray-700 font-bold">產品開發人員</span>
+                  <span className="text-gray-700 font-bold">無</span>
                   <p>
-                    <span className="text-gray-700 mr-2">於 XYZ Tech</span>
-                    <span className="text-gray-700">2015 - 2018</span>
+                    <span className="text-gray-700 mr-2">無</span>
+                    <span className="text-gray-700">無</span>
                   </p>
                 </div>
                 <p className="mt-2">
